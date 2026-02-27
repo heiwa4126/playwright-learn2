@@ -45,10 +45,10 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Install playwright browsers
-        run: npx playwright install chromium
+        run: pnpx playwright install chromium
 
       - name: "INFO: Show tool versions"
-        run: node -v && npm -v && pnpm -v && playwright --version && playwright install --list
+        run: node -v && npm -v && pnpm -v && pnpx playwright --version && pnpx playwright install --list
 
       - name: Run E2E test
         run: pnpm test:e2e
