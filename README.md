@@ -31,4 +31,12 @@ pnpm run test
 gh workflow run e2e-test.yml
 ```
 
-で実行
+で実行。
+
+### TODO
+
+ブラウザのバージョンが上がった時の GitHub Actions のキャッシュがヤバいような気がする。
+
+`pnpx playwright install chromium --dry-run` の hash を
+actions/setup-node の
+キーに追加するなど考える。
