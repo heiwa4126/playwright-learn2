@@ -1,0 +1,18 @@
+{
+	"name": "playwright-learn2",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "http-server public",
+		"format": "biome format --write . && dprint fmt  && textlint --fix \"**/*.md\""
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.30.3",
+	"devDependencies": {
+		"@playwright/test": "^1.58.2",
+		"http-server": "^14.1.1"
+	}
+}
