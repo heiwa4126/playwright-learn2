@@ -5,6 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "http-server public",
+		"test": "playwright test",
 		"format": "biome format --write . && dprint fmt  && textlint --fix \"**/*.md\""
 	},
 	"keywords": [],
@@ -13,6 +14,7 @@
 	"packageManager": "pnpm@10.30.3",
 	"devDependencies": {
 		"@playwright/test": "^1.58.2",
+		"@types/node": "^25.3.1",
 		"http-server": "^14.1.1"
 	}
 }

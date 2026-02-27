@@ -238,3 +238,5 @@ tmp
 *.spdx.json
 .qlty/*
 *.epub
+
+test-results/*
