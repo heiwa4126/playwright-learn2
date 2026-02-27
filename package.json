@@ -5,11 +5,15 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "http-server public",
-		"test": "playwright test",
+		"test": "pnpm run test:e2e",
+		"test:e2e": "playwright test",
 		"format": "biome format --write . && dprint fmt  && textlint --fix \"**/*.md\""
 	},
-	"keywords": [],
-	"author": "",
+	"keywords": [
+		"playwright",
+		"drill"
+	],
+	"author": "me",
 	"license": "ISC",
 	"packageManager": "pnpm@10.30.3",
 	"devDependencies": {
