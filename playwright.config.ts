@@ -16,4 +16,7 @@ export default defineConfig({
 	use: {
 		baseURL: "http://127.0.0.1:8080",
 	},
+	//// `pnpm exec playwright show-report` でレポートを表示できるようにするには
+	//// 以下をコメントアウト
+	// reporter: [["html"]],
 });
