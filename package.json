@@ -4,6 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
+		"preinstall": "pnpm audit",
 		"start": "http-server public",
 		"test": "pnpm run test:e2e",
 		"test:e2e": "playwright test",

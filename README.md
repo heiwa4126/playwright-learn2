@@ -21,3 +21,14 @@ playwright cr 127.0.0.1:8080
 ```sh
 pnpm run test
 ```
+
+## GitHub Actions によるテスト
+
+いまのところ手動。git push の後
+ボタンまたは
+
+```sh
+gh workflow run e2e-test.yml
+```
+
+で実行
