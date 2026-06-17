@@ -2,24 +2,26 @@
 	"name": "playwright-learn2",
 	"version": "1.0.0",
 	"description": "",
+	"keywords": [
+		"drill",
+		"playwright"
+	],
+	"license": "ISC",
+	"author": "me",
 	"main": "index.js",
 	"scripts": {
 		"preinstall": "pnpm audit",
 		"start": "http-server public",
 		"test": "pnpm run test:e2e",
 		"test:e2e": "playwright test",
-		"format": "biome format --write . && dprint fmt  && textlint --fix \"**/*.md\""
+		"format": "oxfmt",
+		"lint": "oxlint",
+		"check": "oxfmt && oxlint --fix"
 	},
-	"keywords": [
-		"playwright",
-		"drill"
-	],
-	"author": "me",
-	"license": "ISC",
-	"packageManager": "pnpm@10.30.3",
 	"devDependencies": {
-		"@playwright/test": "^1.60.0",
-		"@types/node": "^25.9.1",
+		"@playwright/test": "^1.61.0",
+		"@types/node": "^25.9.3",
 		"http-server": "^14.1.1"
-	}
+	},
+	"packageManager": "pnpm@10.30.3"
 }
