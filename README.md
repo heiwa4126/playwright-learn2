@@ -3,7 +3,7 @@
 [playwright](https://www.npmjs.com/package/playwright)による
 E2E テストの練習。
 
-public/ の下にある静的なコンテンツをチェックする
+public/の下にある静的なコンテンツをチェックする
 
 ## 準備と確認
 
@@ -37,6 +37,6 @@ gh workflow run e2e-test.yml
 
 ブラウザのバージョンが上がった時の GitHub Actions のキャッシュがヤバいような気がする。
 
-`pnpx playwright install chromium --dry-run` の hash を
+`pnpx playwright install chromium --dry-run`の hash を
 actions/setup-node の
 キーに追加するなど考える。
